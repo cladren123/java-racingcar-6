@@ -81,7 +81,7 @@ Car의 List를 가지고 있습니다.
 검증 작업을 합니다.
 
 - [X] validateNumber() : 숫자인지 검증합니다. 
-- [ ] validateCarNameNumber() : 자동차 이름이 5자 이하인지 검증합니다. 
+- [X] validateCarNameLength() : 자동차 이름이 5자 이하인지 검증합니다. 
 
 
 
