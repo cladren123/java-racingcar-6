@@ -17,4 +17,13 @@ public class InputView {
     return Console.readLine().trim();
   }
 
+  /**
+   * 시도할 횟수를 입력 받습니다.
+   * @return : String
+   */
+  public static String InputTryNumber() {
+    System.out.println(InputMessage.TRY_NUMBER.getMessage());
+    return Console.readLine().trim();
+  }
+
 }
