@@ -87,9 +87,9 @@ Car의 List를 가지고 있습니다.
 
 ### Enum 클래스
 
-* InputMessage : 입력 화면에 쓰일 메세지를 관리합니다. 
-* OutputMessage : 출력 화면에 쓰일 메세지를 관리합니다. 
-* ConfigConstant : 기능 구현에 필요한 상수들을 관리합니다. 
+- [X] InputMessage : 입력 화면에 쓰일 메세지를 관리합니다. 
+- [X] OutputMessage : 출력 화면에 쓰일 메세지를 관리합니다. 
+- [X] ConfigConstant : 기능 구현에 필요한 상수들을 관리합니다. 
 
 
 
