@@ -80,7 +80,7 @@ Car의 List를 가지고 있습니다.
 
 검증 작업을 합니다.
 
-- [ ] validateNumber() : 숫자인지 검증합니다. 
+- [X] validateNumber() : 숫자인지 검증합니다. 
 - [ ] validateCarNameNumber() : 자동차 이름이 5자 이하인지 검증합니다. 
 
 
@@ -89,6 +89,7 @@ Car의 List를 가지고 있습니다.
 
 - [X] InputMessage : 입력 화면에 쓰일 메세지를 관리합니다. 
 - [X] OutputMessage : 출력 화면에 쓰일 메세지를 관리합니다. 
+- [X] NumberConstant : 기능 구현에 필요한 숫자 상수들을 관리합니다. 
 - [X] ConfigConstant : 기능 구현에 필요한 상수들을 관리합니다. 
 
 
