@@ -2,6 +2,7 @@ package view;
 
 import constant.OutputMessage;
 
+import java.util.List;
 import java.util.Map;
 
 public class OutputView {
@@ -17,6 +18,15 @@ public class OutputView {
         System.out.println(String.format(OutputMessage.ROUND_FORM.getMessage(), name, round.get(roundNumber).get(name)));
       }
     }
+  }
+
+  /**
+   * 최종 우승자를 출력합니다.
+   * @param winner
+   */
+  public static void printWinner(List<String> winners) {
+    String winner = String.join(", ", winners);
+    System.out.println(String.format(OutputMessage.WINNER_FORM.getMessage(), winner));
   }
 
 }
