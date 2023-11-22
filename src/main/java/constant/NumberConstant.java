@@ -6,7 +6,8 @@ package constant;
 public enum NumberConstant {
 
   CAR_SIZE_LIMIT(5),
-  FORWARD_LIMIT(4);
+  FORWARD_LIMIT(4),
+  LOCATION_START(0);
   private final int number;
 
   NumberConstant(int number) {
