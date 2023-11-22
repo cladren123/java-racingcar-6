@@ -4,6 +4,7 @@ import service.RaceService;
 import view.InputView;
 import view.OutputView;
 
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -51,7 +52,8 @@ public class RacingCarController {
    * 최종 우승자 값을 반환 받아 OutputView로 전달합니다.
    */
   public void winner() {
-
+    List<String> winner = raceService.winner();
+    OutputView.printWinner(winner);
   }
 
 
