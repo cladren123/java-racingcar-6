@@ -10,5 +10,14 @@ public class Race {
     this.cars = cars;
   }
 
-  
+  /**
+   * Car의 조건이 맞으면 전진합니다.
+   */
+  public void move() {
+    cars.forEach(Car::move);
+  }
+
+
+
+
 }

@@ -52,7 +52,7 @@
 
 Car의 List를 가지고 있습니다. 
 
-- [ ] move() : List의 Car를 조건에 맞으면 전진시킵니다. 
+- [X] move() : List의 Car를 조건에 맞으면 전진시킵니다. 
 - [ ] round() : List의 Car의 현재 결과를 취합해서 반환합니다. 
 - [ ] winner() : 우승자를 계산해 반환합니다. 
 
