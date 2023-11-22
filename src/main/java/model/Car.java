@@ -17,6 +17,24 @@ public class Car {
   }
 
   /**
+   * 자동차 이름 반환
+   * @return String
+   * 불변 객체라 값의 변경이 없다.
+   */
+  public String getName() {
+    return name;
+  }
+
+  /**
+   * 현재 위치 반환
+   * @return Integer
+   * 불변 객체라 값의 변경이 없다.
+   */
+  public Integer getLocation() {
+    return location;
+  }
+
+  /**
    * 무작위 값을 발생시켜 4보다 크면 전진 합니다.
    */
   public void move() {
@@ -35,6 +53,8 @@ public class Car {
     result.put(name, location);
     return result;
   }
+
+
 
 
 
