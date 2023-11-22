@@ -32,7 +32,8 @@ public class RacingCarController {
    * 시도할 횟수를 입력 받고 검증된 결과값을 받습니다.
    */
   public void inputTryNumber() {
-    
+    String input = InputView.InputTryNumber();
+    raceService.inputTryNumber(input);
   }
 
   /**
