@@ -1,5 +1,6 @@
 package model;
 
+import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
@@ -29,7 +30,26 @@ public class Race {
       result.putAll(car.getRound());
     }
     return result;
+  }
 
+  /**
+   * 우승자를 계산해 반환합니다.
+   * @return String
+   */
+  public List<String> winner() {
+    List<String> winner = new ArrayList<>();
+    int maxNumber = 0;
+    for(Car car : cars) {
+      if(maxNumber < car.getLocation()) {
+        maxNumber = car.getLocation();
+        winner.clear();
+        winner.add(car.getName());
+      }
+      if(maxNumber == car.getLocation()) {
+        winner.add(car.getName());
+      }
+    }
+    return winner;
   }
 
 
