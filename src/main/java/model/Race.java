@@ -24,10 +24,10 @@ public class Race {
    * List의 Car의 현재 결과를 취합해서 반환합니다.
    * @return Map<String,Integer>
    */
-  public Map<String, Integer> round() {
-    Map<String, Integer> result = new LinkedHashMap<>();
+  public Map<String, String> round() {
+    Map<String, String> result = new LinkedHashMap<>();
     for(Car car : cars) {
-      result.putAll(car.getRound());
+      result.put(car.getName(), car.getLocationString());
     }
     return result;
   }
