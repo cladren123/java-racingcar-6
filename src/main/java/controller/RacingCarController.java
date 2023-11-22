@@ -25,15 +25,14 @@ public class RacingCarController {
    */
   public void inputCar() {
     String input = InputView.inputCar();
-
-
+    raceService.inputCar(input);
   }
 
   /**
    * 시도할 횟수를 입력 받고 검증된 결과값을 받습니다.
    */
   public void inputTryNumber() {
-
+    
   }
 
   /**
