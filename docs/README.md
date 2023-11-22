@@ -89,6 +89,13 @@ Car의 List를 가지고 있습니다.
 
 
 
+### Converter
+
+변환 작업을 합니다.
+
+- [X] inputToCars() : 입력값을 변환하여 자동차 리스트로 반환합니다. 
+
+
 ### Enum 클래스
 
 - [X] InputMessage : 입력 화면에 쓰일 메세지를 관리합니다. 
