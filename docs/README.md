@@ -17,7 +17,7 @@
 - [ ] startRacing() : 경주 게임을 시작합니다. 
 - [X] inputCar() : 경주 할 자동차의 이름을 입력 받고 검증된 결과값을 받습니다.
 - [X] inputTryNumber() : 시도할 횟수를 입력 받고 검증된 결과값을 받습니다. 
-- [ ] racing() : 레이싱 게임을 진행한 후 결과값을 반환 받아 OutputView로 전달합니다. 
+- [X] racing() : 레이싱 게임을 진행한 후 결과값을 반환 받아 OutputView로 전달합니다. 
 - [ ] winner() : 최종 우승자 값을 반환 받아 OutputView로 전달합니다. 
 
 

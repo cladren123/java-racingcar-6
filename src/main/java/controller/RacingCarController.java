@@ -2,6 +2,9 @@ package controller;
 
 import service.RaceService;
 import view.InputView;
+import view.OutputView;
+
+import java.util.Map;
 
 /**
  * 사용자의 입력값으로 서비스를 실행하고 결과값을 반환합니다.
@@ -40,7 +43,8 @@ public class RacingCarController {
    * 레이싱 게임을 진행한 후 결과값을 반환 받아 OutputView로 전달합니다.
    */
   public void racing() {
-
+    Map<Integer, Map<String, String>> round = raceService.round();
+    OutputView.printRound(round);
   }
 
   /**
