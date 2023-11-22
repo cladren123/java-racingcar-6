@@ -2,6 +2,7 @@ package model;
 
 import camp.nextstep.edu.missionutils.Randoms;
 import constant.NumberConstant;
+import validate.Validate;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -11,9 +12,10 @@ public class Car {
   private final String name; // 자동차 이름
   private Integer location; // 전진도
 
-  public Car(String name, Integer location) {
+  public Car(String name) {
+    Validate.validateCarNameLength(name);
     this.name = name;
-    this.location = location;
+    this.location = NumberConstant.LOCATION_START.getNumber();
   }
 
   /**
