@@ -7,7 +7,9 @@ import util.Converter;
 import validate.Validate;
 
 import java.util.ArrayList;
+import java.util.LinkedHashMap;
 import java.util.List;
+import java.util.Map;
 
 public class RaceService {
 
@@ -34,6 +36,18 @@ public class RaceService {
   public void inputTryNumber(String input) {
     Validate.validateNumber(input);
     tryNumber = new TryNumber(Integer.parseInt(input));
+  }
+
+  /**
+   * 시도할 횟수만큼 자동차를 움직이고 결과값을 저장한 후에 반환.
+   */
+  public Map<Integer, Map<String, String>> round() {
+    Map<Integer, Map<String, String>> result = new LinkedHashMap<>();
+    for(int i = 1; i <= tryNumber.getTryNumber(); i++) {
+      race.move();
+      result.put(i, race.round());
+    }
+    return result;
   }
 
 }
