@@ -50,4 +50,11 @@ public class RaceService {
     return result;
   }
 
+  /**
+   * 우승자를 계산해 반환합니다.
+   */
+  public List<String> winner() {
+    return race.winner();
+  }
+
 }
