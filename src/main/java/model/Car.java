@@ -50,10 +50,8 @@ public class Car {
    * 현재 결과를 나타냅니다.
    * @return Map<String,Integer>
    */
-  public Map<String, Integer> getRound() {
-    Map<String, Integer> result = new LinkedHashMap<>();
-    result.put(name, location);
-    return result;
+  public String getLocationString() {
+    return "-".repeat(location);
   }
 
 
