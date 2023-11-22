@@ -19,8 +19,10 @@ public class RacingCarController {
    * 경주 게임을 시작합니다.
    */
   public void startRacing() {
-
-
+    inputCar();
+    inputTryNumber();
+    racing();
+    winner();
   }
 
 
