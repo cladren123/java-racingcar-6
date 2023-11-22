@@ -40,12 +40,12 @@ public class Race {
     List<String> winner = new ArrayList<>();
     int maxNumber = 0;
     for(Car car : cars) {
+      if(maxNumber == car.getLocation()) {
+        winner.add(car.getName());
+      }
       if(maxNumber < car.getLocation()) {
         maxNumber = car.getLocation();
         winner.clear();
-        winner.add(car.getName());
-      }
-      if(maxNumber == car.getLocation()) {
         winner.add(car.getName());
       }
     }
