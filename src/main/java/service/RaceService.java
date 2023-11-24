@@ -34,6 +34,7 @@ public class RaceService {
    * 시도할 횟수 입력
    */
   public void inputTryNumber(String input) {
+    Validate.validateBlank(input);
     Validate.validateNumber(input);
     tryNumber = new TryNumber(Integer.parseInt(input));
   }
