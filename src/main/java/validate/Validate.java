@@ -25,7 +25,7 @@ public class Validate {
    */
   public static void validateCarNameLength(String input) {
     if (input.length() > NumberConstant.CAR_SIZE_LIMIT.getNumber()) {
-      throw new IllegalArgumentException();
+      throw new IllegalArgumentException(ErrorMessage.CAR_NAME.getMessage());
     }
   }
 
