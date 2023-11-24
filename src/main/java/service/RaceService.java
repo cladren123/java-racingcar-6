@@ -22,6 +22,7 @@ public class RaceService {
    * @param input
    */
   public void inputCar(String input) {
+    Validate.validateBlank(input);
     List<String> splitInput = Converter.inputToCars(input);
     List<Car> cars = new ArrayList<>();
     for(String data : splitInput) {

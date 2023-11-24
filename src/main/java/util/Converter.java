@@ -17,7 +17,6 @@ public class Converter {
    * @return List<String> result
    */
   public static List<String> inputToCars(String input) {
-    Validate.validateBlank(input);
     return new ArrayList<>(Arrays.asList(input.split(",")));
   }
 
