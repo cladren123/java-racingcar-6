@@ -29,5 +29,13 @@ public class Validate {
     }
   }
 
+  /**
+   * 공백이 들어올 경우 검증
+   */
+  public static void validateBlank(String input) {
+    if(input == null) {
+      throw new IllegalArgumentException(ErrorMessage.BLANK.getMessage());
+    }
+  }
 
 }
