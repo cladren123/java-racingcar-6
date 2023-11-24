@@ -41,7 +41,7 @@ public class Car {
    */
   public void move() {
     int number = Randoms.pickNumberInRange(0, 9);
-    if(number > NumberConstant.FORWARD_LIMIT.getNumber()) {
+    if(number >= NumberConstant.FORWARD_LIMIT.getNumber()) {
       location += 1;
     }
   }
