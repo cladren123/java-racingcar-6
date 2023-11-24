@@ -1,5 +1,7 @@
 package util;
 
+import validate.Validate;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -15,6 +17,7 @@ public class Converter {
    * @return List<String> result
    */
   public static List<String> inputToCars(String input) {
+    Validate.validateBlank(input);
     return new ArrayList<>(Arrays.asList(input.split(",")));
   }
 
