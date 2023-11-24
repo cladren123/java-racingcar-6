@@ -43,6 +43,32 @@ class RaceTest {
     );
   }
 
+  @DisplayName("우승자 반환 테스트 - 단일 우승")
+  @Test
+  void winner_test_single() {
+    List<String> expected = new ArrayList<>(List.of("pobi"));
+    assertRandomNumberInRangeTest(
+            () -> {
+              race.move();
+              assertEquals(race.winner(), expected);
+            },
+            MOVING_FORWARD, STOP
+    );
+  }
+
+  @DisplayName("우승자 반환 테스트 - 공동 우승")
+  @Test
+  void winner_test_multiple() {
+    List<String> expected = new ArrayList<>(List.of("pobi", "andew"));
+    assertRandomNumberInRangeTest(
+            () -> {
+              race.move();
+              assertEquals(race.winner(), expected);
+            },
+            MOVING_FORWARD, MOVING_FORWARD
+    );
+  }
+
 
 
 }
