@@ -1,5 +1,6 @@
 package validate;
 
+import constant.ErrorMessage;
 import constant.NumberConstant;
 
 /**
@@ -15,7 +16,7 @@ public class Validate {
       Integer.parseInt(input);
     }
     catch (NumberFormatException e) {
-      throw new IllegalArgumentException();
+      throw new IllegalArgumentException(ErrorMessage.NUMBER.getMessage());
     }
   }
 
