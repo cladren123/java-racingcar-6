@@ -17,12 +17,12 @@ public class OutputView {
       for(String name : round.get(roundNumber).keySet()) {
         System.out.println(String.format(OutputMessage.ROUND_FORM.getMessage(), name, round.get(roundNumber).get(name)));
       }
+      System.out.println();
     }
   }
 
   /**
    * 최종 우승자를 출력합니다.
-   * @param winner
    */
   public static void printWinner(List<String> winners) {
     String winner = String.join(", ", winners);
